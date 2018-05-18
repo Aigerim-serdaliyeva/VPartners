@@ -354,6 +354,40 @@ body {
       }
     }
 
+    &-delo {
+       .carousel-delo {
+          max-width: 940px;
+          margin: 0 auto 45px;
+       }
+       .delo {
+          padding: 45px 5px 45px 18px;
+          width: 470px;
+          background-image: url('../img/delo-back.jpg');
+          box-shadow: 0px 9px 20.58px 0.42px rgba(0, 0, 0, 0.35);
+          &-block {
+             display: flex;
+             justify-content: space-between;
+             margin-bottom: 20px;
+             &-title {
+                font-size: 46px;
+             }
+             &-text {
+                font-size: 18px;
+                max-width: 280px;
+                text-align: left;
+             }
+          }
+          &-text {
+             font-size: 20px;
+             text-align: left;
+             margin-bottom: 15px;
+          }
+          .button {
+             width: 195px;
+          }
+       }
+    }
+
     &-why {
        background-image: url('../img/why-back.jpg');
        &-content {

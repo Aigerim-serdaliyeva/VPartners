@@ -26,41 +26,95 @@
             margin: 0 auto;
          }
       }
+
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;
-			width: 19px;
-            height: 107px;
-            background-image: url('../img/arrow.png') !important;
-			margin-top: -53px;
-			outline: 0;
+			width: 44px;
+         height: 70px;
+         background-image: url('../img/arrow-left.png') !important;
+         background-repeat: no-repeat !important;
+         background-position: center center !important;
+         box-shadow: 0px 10px 19.2px 4.8px rgba(171, 168, 168, 0.21);
+         background-color: #fff !important;
+			margin-top: -43.5px;
+         outline: 0;
+         z-index: 10;
 		}
 
 		&-prev {
             left: 0px;
-            transform: rotateZ(180deg);
 		}
 
 		&-next {
-			right: 0px;
+         right: 0px;
+         background-image: url('../img/arrow-right.png') !important;
       }
 
       &-dots {
-         margin-top: 30px;
+         position: relative;
+         margin-top: -30px;
       }
       
       &-dot {
-         width: 15px;
+         width: 16px;
          height: 16px;
-         background: lighten($accent, 30%) !important;
+         background: transparent !important;
          margin: 0 5px;
+         border: 3px solid #fff !important;
+         border-radius: 50%;
 
          &.active {
-            background: $accent !important;
-         }
+            background: #fff !important;
+         } 
       }
 	}
 }
+
+
+// .owl-carousel {
+// 	.owl {
+//       &-item {
+//          img {
+//             width: auto;
+//             margin: 0 auto;
+//          }
+//       }
+// 		&-prev, &-next {
+// 			position: absolute;
+// 			top: 50%;
+// 			width: 19px;
+//             height: 107px;
+//             background-image: url('../img/arrow.png') !important;
+// 			margin-top: -53px;
+// 			outline: 0;
+// 		}
+
+// 		&-prev {
+//             left: 0px;
+//             transform: rotateZ(180deg);
+// 		}
+
+// 		&-next {
+// 			right: 0px;
+//       }
+
+//       &-dots {
+//          margin-top: 30px;
+//       }
+      
+//       &-dot {
+//          width: 15px;
+//          height: 16px;
+//          background: lighten($accent, 30%) !important;
+//          margin: 0 5px;
+
+//          &.active {
+//             background: $accent !important;
+//          }
+//       }
+// 	}
+// }
 
 .remodal {
     text-align: left;
