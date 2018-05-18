@@ -1,0 +1,246 @@
+@import './vars';
+
+@mixin circle($width) {
+	width: $width;
+	height: $width;
+	line-height: $width;	
+	text-align: center;
+	border-radius: 50%;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $text_color;
+    outline: none;
+    font-weight: 500;
+    text-decoration: none;
+
+    .inverse & {
+        color: #fff;
+    }
+}
+
+input, button, textarea, a {
+    outline: none;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+.inverse {
+    color: #fff;
+}
+
+.accent {
+    color: $accent;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-left: 20px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.button {
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   padding: 13px 10px;
+   font-size: 14px;
+   line-height: 1;
+   font-weight: normal;
+   text-align: center;
+   background-color:$accent;
+   color: #fff !important;
+   white-space: nowrap;
+   border: 0;
+   cursor: pointer;
+
+   &:hover {
+     
+   }    
+
+   &:active {
+    top: 1px;
+   }
+}
+
+.input-div {
+  position: relative;
+  
+  img {
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    transform: translate(-50%, -50%);
+ }
+
+  .input {
+    width: 100%;  
+  }
+}
+
+.input, .textarea {
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    line-height: inherit;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-family: $default_family, sans-serif;
+    padding: 11px 20px 11px 35px;   
+  
+    &.error {
+		border-color: red;
+		color: red;
+
+		&+.error-message {
+			display: block;
+		}
+	}
+
+	&+.error-message {
+    display: none;
+    text-align: left;
+    color: red;
+    padding-left: 35px;
+    margin-top: 5px;
+	}
+
+	&::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 300;
+		opacity: 1;
+	}
+	
+	&::-moz-placeholder {
+    color: #fff;
+    font-weight: 300;
+		opacity: 1;
+	}
+	
+	&:-ms-input-placeholder {
+    color: #fff;
+    font-weight: 300;
+		opacity: 1;
+	}
+	
+	&.error::-webkit-input-placeholder {
+		color: red;
+	}
+	
+	&.error::-moz-placeholder {
+		color: red;
+	}
+	
+	&.error:-ms-input-placeholder {
+		color: red;
+	}
+}
+
+.text {
+    &-phone {
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}
+
+.form {
+  text-align: left;
+
+  &-info {
+    font-size: 10px;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .input-div {
+    margin-right: 20px;
+  }
+
+  .input-div, .button {
+    margin-bottom: 10px;
+  }
+}
+
+.form2 {
+   max-width: 630px;
+   background-color: rgba($accent, .902);
+   position: relative;
+   z-index: 0;
+   padding-left: 230px;
+   overflow: hidden;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 230px;
+      height: 100%;
+      z-index: -1;
+      background-color: rgba($accent, .902);
+      transform: skewY(-58deg) translateY(50%);
+   }
+   &-title {
+      font-size: 20px;
+      margin: 20px 45px 0 30px;
+   }
+   form {
+      padding: 20px 100px 15px 0;
+   }
+   .input-div {
+      margin-bottom: 15px;
+   }
+   .button {
+      background-color: #fff;
+      color: $accent !important;
+      padding: 13px 5px;
+      width: 100%;
+   }
+   .form-info {
+      text-align: left;
+      font-size: 10px;
+      margin-bottom: 55px;
+   }
+}
+
