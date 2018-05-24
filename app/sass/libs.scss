@@ -43,12 +43,14 @@
 		}
 
 		&-prev {
-            left: 0px;
+         left: 0px;
+         margin-left: -50px;
 		}
 
 		&-next {
          right: 0px;
          background-image: url('../img/arrow-right.png') !important;
+         margin-right: -50px;
       }
 
       &-dots {

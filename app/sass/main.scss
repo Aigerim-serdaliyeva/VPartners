@@ -79,8 +79,7 @@ body {
    width: 100%;
    z-index: 98;
    padding: 10px 0;
-   background-color: rgb(255, 255, 255);
-   opacity: 0.702;
+   background-color: rgba(#fff, 0.7);
 
    &-title {
       font-weight: normal;
@@ -363,11 +362,8 @@ body {
             transform: skewX(33deg);
          }
       
-         .input-div {
-            width: 195px;
-            border: 1px solid $accent;
-         }
          .input {
+            border: 1px solid $accent;
             &::-webkit-input-placeholder {
                color: #000;
               }
