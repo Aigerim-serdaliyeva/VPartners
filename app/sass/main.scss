@@ -371,41 +371,6 @@ body {
             text-align: left;
          }
       }
-      // img {
-      //    border-right: 5px solid #c2c1c1;
-      //    border-bottom: 5px solid #c2c1c1;
-      //    transform: skewX(33deg);
-      // }
-
-      .form {    
-         color: #000;
-         &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -2000px;
-            right: -50px;
-            height: 100%;
-            z-index: -1;
-            background-color: rgba(#fff, .8);
-            transform: skewX(33deg);
-         }
-      
-         .input {
-            border: 1px solid $accent;
-            &::-webkit-input-placeholder {
-               color: #000;
-              }
-              
-              &::-moz-placeholder {
-               color: #000;
-              }
-              
-              &:-ms-input-placeholder {
-               color: #000;
-              }
-         }
-      }
     }
 
     &-delo {
@@ -454,23 +419,6 @@ body {
           display: flex;
           justify-content: space-between;
        }
-       .form2 {
-          margin-top: 0;
-          form {
-             padding: 25px 15px 10px 80px;
-          }
-          &-title {
-             font-size: 20px;
-             margin: 20px 15px 15px 80px;
-          }
-          &-text {
-             font-size: 16px;
-             margin: 0 15px 0 80px;
-          }
-          .form-info {
-             margin-left: 80px;
-          }
-       }
     }
 
     &-sfera {
@@ -500,27 +448,6 @@ body {
             box-shadow: 0px 9px 20.58px 0.42px rgba(0, 0, 0, 0.35);
          }
        }
-       
-
-       .form {    
-         
-         &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -2000px;
-            right: -50px;
-            height: 100%;
-            z-index: -1;
-            background-color: rgba($accent, .8);
-            transform: skewX(33deg);
-         }
-      
-         .input-div {
-            width: 195px;
-         }
-         
-      }
     }
 
     &-osnovatel {
