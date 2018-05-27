@@ -287,12 +287,13 @@ h1, h2, h3, h4, h5, h6 {
       top: 0;
       left: -190px;
       width: 190px;
+      right: auto;
       background-color: rgba($accent, .902);
       height: 100%;      
-      -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-      -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-      -o-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-      clip-path: polygon(100% 0, 0% 100%, 100% 100%);      
+      -webkit-clip-path: polygon(191px 0, 0% 100%, 191px 100%);
+      -moz-clip-path: polygon(191px 0, 0% 100%, 191px 100%);
+      -o-clip-path: polygon(191px 0, 0% 100%, 191px 100%);
+      clip-path: polygon(191px 0, 0% 100%, 191px 100%);      
    }
 
    &-title {
