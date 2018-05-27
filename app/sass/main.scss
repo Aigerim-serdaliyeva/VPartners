@@ -437,11 +437,8 @@ body {
             transform: skewX(33deg);
          }
       
-         .input-div {
-            width: 195px;
-            border: 1px solid $accent;
-         }
          .input {
+            border: 1px solid $accent;
             &::-webkit-input-placeholder {
                color: #000;
               }
