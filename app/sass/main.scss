@@ -48,6 +48,26 @@ body {
     flex-direction: column;
 }
 
+.clock {
+   display: flex;
+   align-items: center;
+   font-size: 20px;
+
+   .timer {
+      &-separator {
+         padding: 0 5px 0 0 !important;
+         font-family: Fusion !important;
+      }      
+   }
+
+   #timer-number-bddefbe24e381597013aafca56ad4b3f-hours,
+   #timer-text-bddefbe24e381597013aafca56ad4b3f-hours,
+   #timer-number-bddefbe24e381597013aafca56ad4b3f-minutes,
+   #timer-text-bddefbe24e381597013aafca56ad4b3f-minutes {
+      font-family: Fusion !important;
+   }
+}
+
 .header {
    position: fixed;
    top: 0;
@@ -214,19 +234,13 @@ body {
             }
          }          
        }
-
-      //  .main {
+       
+      //  .clock {
       //     &-text {
-
+      //        font-size: 20px;
+      //        margin-bottom: 25px;
       //     }
       //  }
-       
-       .clock {
-          &-text {
-             font-size: 20px;
-             margin-bottom: 25px;
-          }
-       }
 
        .form2 {
           margin-top: -110px;
