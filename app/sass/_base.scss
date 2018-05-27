@@ -37,6 +37,10 @@ p {
 	margin: 0 0 1em 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+
 .inverse {
    color: #fff;
 }
@@ -78,6 +82,7 @@ p {
    padding: 11.5px 10px;
    font-size: 14px;
    line-height: 1;
+   letter-spacing: -1px;
    font-weight: normal;
    text-align: center;
    background-color:$accent;
@@ -194,64 +199,133 @@ p {
 }
 
 .form {
-  text-align: left;
+   position: relative;
+   max-width: 900px;
+   z-index: 0;
+   padding: 0 85px 0 130px;
+   color: #fff;
+   
+   form {      
+      padding: 22px 0 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
 
-  &-info {
-    font-size: 10px;
-  }
+   &-title {
+      font-size: 20px;
+      text-align: center;
+      padding-top: 15px;
+   }
 
-  form {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+   .input-div {
+      width: 195px;
+      margin-right: 20px;
+   }
 
-  .input-div {
-    margin-right: 20px;
-  }
+   .input-div, .button {
+      margin-bottom: 10px;
+   }
 
-  .input-div, .button {
-    margin-bottom: 10px;
-  }
+   &-info {
+      font-size: 10px;
+   }
+
+   .clock {
+      &-text {
+         font-size: 20px;
+      }
+   }
+
+   &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2000px;
+      right: -50px;
+      height: 100%;
+      z-index: -1;
+      background-color: $accent;
+      transform: skewX(33deg);
+   }
+
+   &--white {
+      color: #000;
+      
+      &:after {
+         background-color: rgba(#fff, .8);
+      }
+
+      .input {
+         border: 1px solid $accent;
+      
+         &::-webkit-input-placeholder {
+            color: #000;
+         }
+         
+         &::-moz-placeholder {
+            color: #000;
+         }
+         
+         &:-ms-input-placeholder {
+            color: #000;
+         }
+      }
+   }
+
+
 }
 
 .form2 {
-   max-width: 630px;
+   max-width: 400px;
    background-color: rgba($accent, .902);
    position: relative;
-   z-index: 0;
-   padding-left: 230px;
-   overflow: hidden;
 
    &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: 0px;
-      width: 230px;
-      height: 100%;
-      z-index: -1;
+      left: -190px;
+      width: 190px;
       background-color: rgba($accent, .902);
-      transform: skewY(-58deg) translateY(50%);
+      height: 100%;      
+      -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      -moz-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      -o-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);      
    }
+
    &-title {
       font-size: 20px;
       margin: 20px 45px 0 30px;     
    }
+
    form {
-      padding: 20px 100px 15px 0;
+      margin: 20px auto;
+      max-width: 263px;
    }
-   .input-div {
+
+   .input-div, .button {
       margin-bottom: 15px;
+      width: 100%;
    }
    
    .form-info {
       text-align: left;
       font-size: 10px;
       margin-bottom: 55px;
+      letter-spacing: 0px;
    }
-   .button {
-      width: 100%;
+
+   &--left {
+      &::before {
+         left: auto;
+         right: -190px;
+         -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+         -moz-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+         -o-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+         clip-path: polygon(0 0, 0% 100%, 100% 100%);;      
+      }  
    }
 }
 
