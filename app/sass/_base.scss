@@ -280,6 +280,7 @@ h1, h2, h3, h4, h5, h6 {
    max-width: 400px;
    background-color: rgba($accent, .902);
    position: relative;
+   padding-bottom: 20px;
 
    &::before {
       content: "";
@@ -302,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    form {
-      margin: 20px auto;
+      margin: 20px auto 20px;
       max-width: 263px;
    }
 
@@ -314,7 +315,6 @@ h1, h2, h3, h4, h5, h6 {
    .form-info {
       text-align: left;
       font-size: 10px;
-      margin-bottom: 55px;
       letter-spacing: 0px;
    }
 
