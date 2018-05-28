@@ -670,6 +670,7 @@ body {
 
 .more {
    max-width: 940px;
+   height: 460px;
    padding: 0;
    background-image: url('../img/delo-modal-back.jpg');
 
@@ -717,7 +718,9 @@ body {
 
 .sfer-more {
    max-width: 655px;
+   height: 320px;
    padding: 0;
+   background-color: #89a3c7;
    .remodal-close {
       color: #fff;
    }
@@ -732,10 +735,10 @@ body {
          display: flex;
          justify-content: space-between;
          padding: 35px 55px 60px 70px;
-         background-color: #89a3c7;
       }
       &-label {
          font-size: 18px;
+         max-width: 265px;
       }
       .checkbox {
          display: block;
