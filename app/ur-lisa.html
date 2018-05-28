@@ -85,6 +85,31 @@
                <li> Представление интересов <br>
                   в суде</li>
             </ul> 
+
+            <div class="form">
+               <div class="form-title">Скидка 50%</div>
+               <div class="form-text">Для того, чтобы Вы могли убедиться в высоком качестве наших услуг, <br>
+                  мы готовы дать скидку 50% на первый месяц юридического сопровождения Вашего бизнеса</div>
+
+               <form action="/mail.php" method="post">
+                  <input type="hidden" name="info" value="Запишитесь на консультацию юриста прямо сейчас и получите скидку 10%">
+                  <div class="input-div">
+                     <input type="text" class="input" name="name" placeholder="Представьтесь">
+                  </div>
+                  <div class="input-div">
+                     <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
+                     <span class="error-message">Заполните это поле</span>
+                  </div>
+
+                  <button class="button button-white ajax-submit" type="submit" id="polu4it_prais_list">Попробовать со скидкой 50%  </button>
+               </form>
+
+               <div class="form-info">*Гарантия конфиденциальности вводимых данных</div>
+
+               <div class="clock">
+                  <div class="clock-text">Предложение истекает через</div>
+               </div>
+            </div>
          </div>
       </section>  
 

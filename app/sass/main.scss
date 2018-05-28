@@ -135,8 +135,7 @@ body {
    }
    &-comand {
       margin-left: 100px;
-   }
-   
+   }   
 }
 
 .main-menu {    
@@ -189,7 +188,7 @@ body {
        background-image: url('../img/main-back.jpg');
 
        &-title {
-          font-size: 35px;
+          font-size: 39px;
           margin: 0 0 35px 0;
           text-align: left;
           max-width: 780px;
@@ -255,6 +254,8 @@ body {
           font-size: 42px;
           font-weight: normal;
           max-width: 1110px;
+          text-align: center; 
+          margin-bottom: 35px;
        }
        &-list {
          text-align: left;
@@ -280,24 +281,6 @@ body {
                top: 50%;
                transform: translateY(-50%);
             }
-         }
-      }
-
-      .form {             
-         &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -2000px;
-            right: -50px;
-            height: 100%;
-            z-index: -1;
-            background-color: rgba($accent, .8);
-            transform: skewX(33deg);
-         }
-      
-         .input-div {
-            width: 195px;
          }
       }
     }
@@ -412,10 +395,11 @@ body {
              margin-bottom: 15px;
              text-decoration: underline;
           }
+          
           .button {
-             width: 195px;
-            //  text-align: center;
-          }
+            width: 195px;
+            margin: 0 auto;
+         }
        }
     }
 
@@ -427,28 +411,31 @@ body {
        background-image: url('../img/why-back.jpg');
        &-content {
           display: flex;
-          justify-content: space-between;
+         //  justify-content: space-between;
+       }
+       .form2 {
+          margin-right: 220px;
+          padding: 0 40px;
+
+          &:last-child {
+             margin-right: 0;
+          }
        }
     }
 
     &-sfera {
-       position: relative;
-       &::before {
-         content: "";
-         width: 394px;
-         height: 394px;
-         background-image: url('../img/vesy.png');
-         background-position: center center;
-         position: absolute;
-       }       
+       position: relative;      
        &-content {
           display: flex;
           justify-content: space-between;
           margin-bottom: 45px;
+          background-image: url('../img/vesy.png');
+          background-position: center center;
+          background-repeat: no-repeat; 
        }
        .sfera {
           width: 265px;
-          margin-bottom: 40px;
+          margin-bottom: 35px;
           &-title {
              font-size: 24px;
              margin-bottom: 15px;
@@ -553,8 +540,7 @@ body {
     }
 }
 
-#thanks-page {
-   
+#thanks-page {   
 
    .page-wrapper {
       background-image: url('../img/thanks-back-top.png');
@@ -597,7 +583,9 @@ body {
 }
 
 #ur-lisa {
-   
+   .section {
+      
+   }   
 }
 
 .modal {
