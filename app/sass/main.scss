@@ -58,13 +58,10 @@ body {
          padding: 0 5px 0 0 !important;
          font-family: Fusion !important;
       }      
-   }
 
-   #timer-number-bddefbe24e381597013aafca56ad4b3f-hours,
-   #timer-text-bddefbe24e381597013aafca56ad4b3f-hours,
-   #timer-number-bddefbe24e381597013aafca56ad4b3f-minutes,
-   #timer-text-bddefbe24e381597013aafca56ad4b3f-minutes {
-      font-family: Fusion !important;
+      &-element span {
+         font-family: Fusion !important;         
+      }
    }
 }
 
@@ -75,6 +72,11 @@ body {
    z-index: 98;
    padding: 10px 0;
    background-color: rgba(#fff, 0.7);
+
+   &.scrolled {
+      background-color: rgba(#fff, 1);      
+      border-bottom: 1px solid $accent;
+   }
 
    &-content {
       display: flex;
@@ -368,20 +370,31 @@ body {
 
     &-delo {
        .carousel-delo {
-          max-width: 940px;
-          margin: 0 auto 45px;
+         max-width: 1100px;
+         padding: 0 77px;   
+         
+         .owl-item {
+            padding: 0 15px 30px;
+         }
        }
        .delo {
-          padding: 45px 5px 45px 18px;
-          width: 470px;
+          padding: 0px 5px 40px 30px;
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
           background-image: url('../img/delo-back.jpg');
+          background-size: cover;
           box-shadow: 0px 9px 20.58px 0.42px rgba(0, 0, 0, 0.35);
+
           &-block {
              display: flex;
+             align-items: center;
              margin-bottom: 20px;
              &-title {
                 font-size: 45px;
                 margin-right: 15px;
+                flex-shrink: 0;
              }
              &-text {
                 font-size: 18px;
@@ -392,13 +405,14 @@ body {
           &-text {
              font-size: 20px;
              text-align: left;
-             margin-bottom: 15px;
+             margin-bottom: 25px;
              text-decoration: underline;
           }
           
           .button {
             width: 195px;
             margin: 0 auto;
+            box-shadow: 0px 9px 20.58px 0.42px rgba(0, 0, 0, 0.35);
          }
        }
     }
@@ -415,7 +429,9 @@ body {
        }
        .form2 {
           margin-right: 220px;
-          padding: 0 40px;
+         //  padding-left: 20px;
+         //  padding-right: 20px;
+         //  padding: 0 40px;
 
           &:last-child {
              margin-right: 0;
@@ -524,7 +540,11 @@ body {
           display: flex;
        }
        .map {
-          width: 65%;
+         width: 70%;
+         -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%, calc(100% - 190px) 0);
+         -moz-clip-path: polygon(0 0, 0% 100%, 100% 100%, calc(100% - 190px) 0);
+         -o-clip-path: polygon(0 0, 0% 100%, 100% 100%, calc(100% - 190px) 0);
+         clip-path: polygon(0 0, 0% 100%, 100% 100%, calc(100% - 190px) 0); 
        }
        .contact {
           width: 35%;
@@ -533,8 +553,8 @@ body {
           max-width: 230px;
           text-align: left;
           
-          &-title {
-             margin-bottom: 60px;
+          &-address {
+             margin: 0 0 60px -80px;
           }
        }
     }
@@ -591,10 +611,6 @@ body {
 .modal {
   text-align: center;
   background-color: $accent;
-
-  &[data-remodal-id="obsudit-sodrudni4estvo"] {
-    padding-bottom: 20px;
-  }
 
   .remodal-close {
      color: #fff;
@@ -670,7 +686,7 @@ body {
 
 .more {
    max-width: 940px;
-   height: 460px;
+   min-height: 460px;
    padding: 0;
    background-image: url('../img/delo-modal-back.jpg');
 

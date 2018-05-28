@@ -8,8 +8,6 @@
 	border-radius: 50%;
 }
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -203,20 +201,25 @@ h1, h2, h3, h4, h5, h6 {
    position: relative;
    max-width: 900px;
    z-index: 0;
-   padding: 0 85px 0 130px;
    color: #fff;
+   padding: 15px;
    
    form {      
-      padding: 22px 0 10px 0;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
    }
 
+   &-content {
+      max-width: 690px;
+      margin: 0 auto;
+   }
+
    &-title {
       font-size: 20px;
       text-align: center;
-      padding-top: 15px;
+      max-width: 690px;
+      margin: 0 auto 20px;
    }
 
    &-text {
@@ -239,8 +242,11 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .clock {
-      &-text {
-         font-size: 20px;
+      justify-content: flex-end;
+      margin-right: -50px;
+
+      .timer-element > span:last-child {
+         color: #000 !important;
       }
    }
 
@@ -284,36 +290,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form2 {
-   max-width: 400px;
+   max-width: 360px;
    background-color: rgba($accent, .902);
    position: relative;
-   padding: 0 48px 0 48px;
+   padding: 20px 30px;
+   z-index: 0;
 
    &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: -190px;
-      width: 190px;
+      left: -170px;
+      width: 170px;
       right: auto;
       background-color: rgba($accent, .902);
       height: 100%;      
-      -webkit-clip-path: polygon(191px 0, 0% 100%, 191px 100%);
-      -moz-clip-path: polygon(191px 0, 0% 100%, 191px 100%);
-      -o-clip-path: polygon(191px 0, 0% 100%, 191px 100%);
-      clip-path: polygon(191px 0, 0% 100%, 191px 100%);      
+      z-index: -1;
+      -webkit-clip-path: polygon(171px 0, 0% 100%, 171px 100%);
+      -moz-clip-path: polygon(171px 0, 0% 100%, 171px 100%);
+      -o-clip-path: polygon(171px 0, 0% 100%, 171px 100%);
+      clip-path: polygon(171px 0, 0% 100%, 171px 100%);      
    }
 
    &-title {
       font-size: 20px;
-      margin: 20px 0 0 0;    
       text-align: center; 
-      max-width: 265px;
    }
 
    &-text {
       font-size: 16px;
-      // max-width: 245px;
       text-align: center;
       margin-top: 20px;
    }
@@ -334,10 +339,14 @@ h1, h2, h3, h4, h5, h6 {
       letter-spacing: 0px;
    }
 
+   .clock {
+      margin-left: -55px;
+   }
+
    &--left {
       &::before {
          left: auto;
-         right: -190px;
+         right: -170px;
          -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
          -moz-clip-path: polygon(0 0, 0% 100%, 100% 100%);
          -o-clip-path: polygon(0 0, 0% 100%, 100% 100%);

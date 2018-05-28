@@ -150,7 +150,7 @@ $(document).ready(function() {
       dots: false,
       loop: true,
       smartSpeed: 500,
-      margin: 30,
+      margin: 0,
       navText: ['', ''],
       responsive: {
          0: { items: 1, mouseDrag: false },
