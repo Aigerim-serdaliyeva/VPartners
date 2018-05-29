@@ -285,6 +285,12 @@ body {
             }
          }
       }
+
+      .form {
+         &-title {
+            margin-bottom: 8px;
+         }
+      }
     }
 
     &-quarantees {
@@ -338,6 +344,7 @@ body {
       .sotrudni4estva {
          width: 48%;
          display: flex;
+         align-items: flex-start;
          justify-content: space-between;
          margin-bottom: 40px;
          &-title {
@@ -362,9 +369,12 @@ body {
             }
          }
          &-block {
-            max-width: 270px;
+            max-width: 265px;
             text-align: left;
          }
+      }
+      .form-title {
+         margin-bottom: 8px;
       }
     }
 
@@ -378,7 +388,7 @@ body {
          }
        }
        .delo {
-          padding: 0px 5px 40px 30px;
+          padding: 0px 5px 40px 10px;
           min-height: 300px;
           display: flex;
           flex-direction: column;
@@ -425,13 +435,9 @@ body {
        background-image: url('../img/why-back.jpg');
        &-content {
           display: flex;
-         //  justify-content: space-between;
        }
        .form2 {
           margin-right: 220px;
-         //  padding-left: 20px;
-         //  padding-right: 20px;
-         //  padding: 0 40px;
 
           &:last-child {
              margin-right: 0;
@@ -531,6 +537,12 @@ body {
              border-right: 5px solid #c48164;
              border-bottom: 5px solid #c48164;
           }
+       }
+
+       .form {
+          &-title {
+            margin-bottom: 8px;
+          }         
        }
 
     }
@@ -734,7 +746,7 @@ body {
 
 .sfer-more {
    max-width: 655px;
-   height: 320px;
+   min-height: 320px;
    padding: 0;
    background-color: #89a3c7;
    .remodal-close {
@@ -755,6 +767,21 @@ body {
       &-label {
          font-size: 18px;
          max-width: 265px;
+      }
+      &-text {
+         font-size: 18px;
+         padding-left: 25px;
+         position: relative;
+         margin-bottom: 15px;
+         &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../img/checked-sfera.png');
+            width: 15px;
+            height: 13px;
+            left: 0;
+            top: 5px;
+         }
       }
       .checkbox {
          display: block;
@@ -780,6 +807,10 @@ body {
          &:-ms-input-placeholder {
             color: #000;
          }
+      }
+      .button {
+         width: 100%;
+         padding: 11.5px 5px;
       }
    }
 }
