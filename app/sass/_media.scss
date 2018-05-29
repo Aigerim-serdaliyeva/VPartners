@@ -26,7 +26,11 @@
    }
 
    .section {    
-      
+      &-main {
+         .form2 {
+            margin-top: 0;
+         }
+      }
    }
 
 }
@@ -48,15 +52,20 @@
 
     .hamburger {
         display: block;
+        align-self: center;
     }    
 
-    .header {
-        &-phone {
-           display: none;
-        }
+   .header {
+      padding: 5px 0;
+      &-title {
+         align-self: center;
+         margin-top: 0;
+      }
 
-        
-    }
+      &-phone {
+         display: none;
+      }        
+   }
 
     .footer {
         text-align: center;
@@ -78,7 +87,7 @@
       display: none;
       background-color: #fff;
       position: fixed;
-      top: 101px;
+      top: 89px;
       left: 0;
       right: 0;
       text-align: left;
@@ -89,7 +98,8 @@
 		ul {
 			display: block;
 			height: auto;
-			padding: 0;
+         padding: 0;
+         margin: 0;
 
 			li {
                 margin: 0 0 5px;
@@ -100,8 +110,48 @@
 			}
 		}
     }
+    
 
    .section {
+
+      &-main {
+         &-content {
+            flex-direction: column;
+         }
+         &-title {
+            font-size: 32px;
+            text-align: center;
+         }
+         .form2 {
+            margin: 0 0 0 auto;            
+         }
+      }
+
+      &-quarantees {
+         &-content {
+            flex-direction: column;
+         }
+         .quarantee {
+            width: 100%;
+         }
+      }
+
+      &-why {
+         &-content {
+            flex-direction: column; 
+         }
+         .form2 {
+            &:first-child {
+               margin-bottom: 20px !important;
+            }
+         }
+      }
+
+      &-sfera {
+         &-content {
+            background-image: none;
+         }
+      }
       
    }
 
@@ -133,12 +183,7 @@
 }
 
 @media only screen and (max-width : 880px) { 
-  .more {
-    .form {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
+  
 }
 
 /* Small Devices, Tablets */
@@ -152,16 +197,27 @@
         &-title {
            display: none;
         }
-        .logo {
-           margin: 0;
-        }
-        .button {
-           margin: 0;
+        .grow {
+           display: block;
         }
     }
     
+   .form2 {
+      margin: 0 auto !important;
+      max-width: 500px;
+      &::before {
+         display: none;
+      }
+      .clock {
+         margin-left: 0;
+         justify-content: center;
+      }
+   }
+
    .section {
-      
+      &-main {
+         padding-top: 120px;
+      }
       
    }
 
@@ -190,16 +246,20 @@
 
 }
 
-@media only screen and (max-width : 640px) {
-  .more {
-    &-content {
-       flex-direction: column;         
-    }
-
-    &-img {
-      margin: 0 auto;
-   }
- }
+@media only screen and (max-width : 610px) {
+  .section {
+     &-sfera {
+        &-content {
+           flex-direction: column;
+        }
+        .sfera {
+           margin: 0 auto 25px;
+           &-title {
+              margin-bottom: 10px;
+           }
+        }
+     }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -258,7 +318,41 @@
          margin-bottom: 20px;
       }
 
+      &-main {
+         &-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+         }
+         &-text {
+            font-size: 20px;
+            margin-bottom: 20px;
+         }
+         li {
+            font-size: 18px;
+         }
+      }
 
+      &-quarantees {
+         .quarantee {
+            margin-bottom: 20px;
+            &-title {
+               font-size: 20px;
+               margin-bottom: 10px;
+            }
+            &-img {
+               width: 40px;
+               margin-right: 10px;
+            }
+         }
+      }
+
+      &-sfera {
+         .sfera {
+            &-title {
+               font-size: 22px;
+            }
+         }
+      }
    }
 
    .modal {

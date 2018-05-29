@@ -84,10 +84,8 @@ body {
       justify-content: space-between;      
    }
 
-   &-top {
-      margin-top: 7px;
-      display: flex;
-      justify-content: space-between;      
+   .grow {
+      display: none;
    }
 
    &-title {
@@ -781,6 +779,8 @@ body {
             height: 13px;
             left: 0;
             top: 5px;
+            // top: 50%;
+            // transform: translateY(-50%);
          }
       }
       .checkbox {
