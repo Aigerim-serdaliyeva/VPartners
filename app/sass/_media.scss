@@ -31,6 +31,15 @@
             margin-top: 0;
          }
       }
+
+      &-sotrudni4estva {
+         .sotrudni4estva {
+            width: 49%;
+            img {
+               margin-right: 10px;
+            }
+         }
+      }
    }
 
 }
@@ -136,6 +145,18 @@
          }
       }
 
+      &-sotrudni4estva {
+         &-content {
+            flex-direction: column;
+         }
+         .sotrudni4estva {
+            width: 100%;
+            &-block {
+               max-width: 500px;
+            }
+         }
+      }
+
       &-why {
          &-content {
             flex-direction: column; 
@@ -153,6 +174,23 @@
          }
       }
       
+      &-osnovatel {
+         .danil {
+            img {
+               min-width: 100% !important;
+            }
+            &-img {
+               margin: 35px;
+               
+            }
+            &-block {
+               padding: 10px;
+            }
+         }
+         .certificate {
+            
+         }
+      }
    }
 
    #thanks-page {
@@ -256,6 +294,18 @@
            margin: 0 auto 25px;
            &-title {
               margin-bottom: 10px;
+           }
+        }
+     }
+
+     &-sotrudni4estva {
+        .sotrudni4estva {
+           flex-direction: column;
+           img {
+              margin: 0 auto 10px;
+           }
+           &-block {
+              margin: 0 auto;
            }
         }
      }
