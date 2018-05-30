@@ -159,6 +159,11 @@ $(document).ready(function() {
       },
    });
 
+   $(".s-dropdown select").change(function() {
+      var val = $(this).val();
+      $(".s-col[data-col]").removeClass("active").filter("[data-col=" + val + "]").addClass("active");
+   });
+
    
 
 });
