@@ -26,7 +26,13 @@
    }
 
    .section {    
-      
+      &-services {
+        .s {
+          &-col, &-side {
+            font-size: 16px;
+          }
+        }
+      }
    }
 
 }
@@ -102,7 +108,29 @@
     }
 
    .section {
-      
+      &-services {
+        .s {
+          &-head {
+            font-size: 16px;
+          }
+
+          &-col {
+            display: none;
+            margin-right: 0;
+            &.active {
+              display: block;
+            }
+          }
+
+          &-hcell {
+            display: none;
+          }
+
+          &-dropdown {
+            display: flex;
+          }
+        }
+      }
    }
 
    #thanks-page {
@@ -258,7 +286,17 @@
          margin-bottom: 20px;
       }
 
-
+      &-services {
+         .s {
+            &-side {
+               margin-right: 0;
+               padding-top: 105px;
+            }
+            &-head {
+               margin-bottom: 0;
+            }
+         }
+      }
    }
 
    .modal {

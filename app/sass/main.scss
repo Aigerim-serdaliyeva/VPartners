@@ -419,6 +419,95 @@ body {
 
     &-services {
        background-image: url('../img/service-back.jpg');
+       text-align: center;
+
+      .s {
+        &-table {
+          display: flex;
+
+        }
+
+        &-side {
+          background-color: rgba(#fff, 0.9);
+          color: #000;
+          text-align: right;
+          margin-right: 30px;
+          width: 190px;
+          padding: 135px 5px 0;
+          font-size: 18px;
+
+          .s-cell {
+            justify-content: flex-end;
+          }
+        }
+
+        &-content {
+          flex-grow: 1;
+        }
+
+        &-head {
+          font-size: 24px;
+          height: 35px;
+          line-height: 35px;
+          background-color: rgba(#fff, 0.9);
+          color: #000;
+          margin-bottom: 30px;
+        }
+
+        &-body {
+          display: flex;
+        }
+
+        &-col {
+          padding: 0 5px;
+          margin-right: 30px;
+          flex-grow: 1;
+          background-color: rgba($accent, 0.92);
+          font-size: 20px;
+          flex-basis: 165px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }        
+
+        &-cell, &-button, &-hcell, &-dropdown {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+        }
+
+        &-hcell, &-dropdown {
+          height: 70px;          
+          border-bottom: 2px solid #fff;
+        }
+
+        &-dropdown {
+          display: none;
+          flex-direction: column;
+          background-color: rgba($accent, 0.9);
+
+          select {
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            outline: none;
+            padding: 5px 10px;
+
+            option {
+              color: #000;
+            }
+          }
+        }
+
+        &-button {
+          .button {
+            max-width: 130px;
+            width: 100%;
+          }
+        }        
+      }
     }
 
     &-why {
