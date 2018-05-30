@@ -165,7 +165,7 @@ body {
 }
 
 .section {
-    padding: 40px 0 20px;
+    padding: 40px 0 35px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -533,7 +533,8 @@ body {
     }
 
     &-sfera {
-       position: relative;      
+       position: relative;     
+        
        &-content {
           display: flex;
           justify-content: space-between;
@@ -558,20 +559,25 @@ body {
     }
 
     &-osnovatel {
+       padding: 0;
+       
        .section-title {
           margin: 0 auto;
           padding: 25px 0;
        }
+
        &-content {
          background-image: url('../img/osnovatel-back.jpg');
-         background-repeat: no-repeat;
-       }       
+         background-size: cover;
+       }    
+
        .danil {
          background-color: rgba($accent, .902);
          margin-bottom: 15px;
           &-content {
             display: flex;
             justify-content: space-between;
+            align-items: flex-end;
             max-width: 825px;
             margin: 0 auto;
           }
@@ -590,38 +596,55 @@ body {
              font-size: 18px;
              margin-bottom: 15px;
           }
-          &-text {
-             font-size: 18px;
-             padding-left: 25px;
-             position: relative;
-             margin-bottom: 20px;
-             &::before {
-                content: "";
-               position: absolute;
-               background-image: url('../img/checked-2.png');
-               width: 15px;
-               height: 13px;
-               left: 0;
-               top: 5px;
-             }
-             &:last-child {
-               margin-bottom: 0;
+
+          &-img {
+             flex-shrink: 0;
+             img {
+                display: block;
              }
           }
+
+          &-list {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+            li {
+               font-size: 18px;
+               padding-left: 25px;
+               position: relative;
+               margin-bottom: 15px;
+               
+               &::before {
+                  content: "";
+                  position: absolute;
+                  background-image: url('../img/checked-2.png');
+                  width: 15px;
+                  height: 13px;
+                  left: 0;
+                  top: 5px;
+               }
+
+               &:last-child {
+                  margin-bottom: 0;
+               }
+            }
+          }
        }
+
        .certificate {
+          display: inline-block;
+          margin: 0 30px 30px 0;
+
           &-content {
              max-width: 800px;
              text-align: left;
              margin-left: 100px;
-             padding-bottom: 30px;
              &-title {
                 font-size: 20px;
                 margin-bottom: 20px;
              }
           }
           img {
-             margin-right: 30px;
              border-right: 5px solid #c48164;
              border-bottom: 5px solid #c48164;
           }

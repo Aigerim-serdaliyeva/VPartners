@@ -42,18 +42,16 @@
 
 		&-prev {
          left: 0px;
-         // margin-left: -50px;
 		}
 
 		&-next {
          right: 0px;
          background-image: url('../img/arrow-right.png') !important;
-         // margin-right: -50px;
       }
 
       &-dots {
          position: relative;
-         margin-top: -30px;
+         text-align: center;
       }
       
       &-dot {
@@ -61,11 +59,11 @@
          height: 16px;
          background: transparent !important;
          margin: 0 5px;
-         border: 3px solid #fff !important;
+         border: 3px solid $accent !important;
          border-radius: 50%;
 
          &.active {
-            background: #fff !important;
+            background: $accent !important;
          } 
       }
 	}

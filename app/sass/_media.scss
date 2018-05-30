@@ -15,9 +15,45 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
+   .form {
+      max-width: 800px;
+   }
+
+   .form2 {
+      &:before {
+         left: -120px;
+         width: 120px;
+         -webkit-clip-path: polygon(121px 0, 0% 100%, 121px 100%);
+         -moz-clip-path: polygon(121px 0, 0% 100%, 121px 100%);
+         -o-clip-path: polygon(121px 0, 0% 100%, 121px 100%);
+         clip-path: polygon(121px 0, 0% 100%, 121px 100%);  
+      }
+
+      &--left {
+         &:before {
+            left: auto;
+            right: -120px;
+            -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            -moz-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            -o-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);  
+         }
+      }
+   }
+
    .header {
       &-slogan {
          display: none;
+      }
+   }
+
+   .footer {
+      .logo {
+         margin: 0;
+      }
+
+      &-comand, &-address, &-phone {
+         margin: 0;
       }
    }
 
@@ -26,19 +62,46 @@
    }
 
    .section {    
+      &-main {
+         .form2 {
+            margin-top: 0;
+         }
+      }
+
+      &-delo {
+         .delo {
+            &-block {
+               &-title {
+                  font-size: 35px;
+               }
+
+               &-text {
+                  font-size: 16px;
+               }
+            }
+         }
+
+         &-text {
+            font-size: 16px;
+         }
+      }
+
+      &-why {
+         .form2 {
+            margin-right: 130px;
+            &:last-child {
+               margin-right: 0;
+            }
+         }
+      }
+
       &-services {
         .s {
           &-col, &-side {
             font-size: 16px;
           }
         }
-      }
-      
-      &-main {
-         .form2 {
-            margin-top: 0;
-         }
-      }
+      }      
 
       &-sotrudni4estva {
          .sotrudni4estva {
@@ -48,6 +111,12 @@
             }
          }
       }
+
+      &-contact {
+         .map {
+            width: 75%;
+         }
+      }
    }
 
 }
@@ -55,16 +124,41 @@
 @media only screen and (max-width : 991px) {	
 
     .form {
-       &-title {
-          font-size: 20px;
-          margin: 15px;
-       }
-        &-content {
-            justify-content: center;
-            .input-div {
-                margin: 0 15px 30px;
-            }
-        }
+      max-width: 600px;      
+
+      &-info, form, .clock, &-title {
+         max-width: 400px;
+         margin: 0 auto;         
+      }
+
+      &-title {
+         font-size: 20px;
+         margin-bottom: 15px;
+      }
+
+      form {
+         flex-direction: column;
+      }
+
+      .clock {
+         justify-content: space-between;
+      }
+
+      .input-div, .button {
+         width: 100%;
+      }
+    }
+
+    .form2 {
+      margin: 0 auto !important;
+      max-width: 500px;
+      &::before {
+         display: none;
+      }
+      .clock {
+         margin-left: 0;
+         justify-content: center;
+      }
     }
 
     .hamburger {
@@ -130,6 +224,23 @@
     
 
    .section {
+      &-delo {
+         .delo {
+            padding-top: 30px;
+            min-height: 320px;
+            justify-content: flex-start;
+            
+            &-block {
+               flex-direction: column;
+            }
+
+            &-text {
+               flex-grow: 1;
+               font-size: 17px;
+            }
+         }
+      }
+
       &-services {
         .s {
           &-head {
@@ -211,15 +322,12 @@
                min-width: 100% !important;
             }
             &-img {
-               margin: 35px;
+               margin: 0 15px;
                
             }
             &-block {
                padding: 10px;
             }
-         }
-         .certificate {
-            
          }
       }
    }
@@ -251,10 +359,6 @@
 
 }
 
-@media only screen and (max-width : 880px) { 
-  
-}
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
@@ -270,24 +374,113 @@
            display: block;
         }
     }
-    
-   .form2 {
-      margin: 0 auto !important;
-      max-width: 500px;
-      &::before {
+   
+   .form {
+      max-width: none;
+      background-color: $accent;
+
+      &:after {
          display: none;
       }
-      .clock {
-         margin-left: 0;
-         justify-content: center;
+
+      &--white {
+         background-color: rgba(255,255,255,.8);
       }
    }
+    
+   
 
    .section {
+      &-title {
+         font-size: 24px;
+      }
+
       &-main {
          padding-top: 120px;
+
+         &-text {
+            margin-bottom: 10px;
+         }
+
+         &-list {
+            margin-bottom: 30px;
+            li {
+               margin-bottom: 10px;
+            }
+         }
       }
-      
+
+      &-delo {
+         .delo {
+            &-block {
+               &-text {
+                  max-width: 350px;
+               }
+            }
+         }
+
+         .carousel-delo {
+            padding: 0;
+            max-width: 500px;
+            margin: 0 auto;
+         }
+      }
+
+      &-osnovatel {
+         &-content {
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+         .danil {
+            &-content {
+               display: block;
+            }
+            img {
+               display: none;
+            }
+            &-block {
+               max-width: none;
+            }
+         }
+         .certificate {
+            display: block;
+            margin: 0 auto 10px;
+
+            &-content {
+               text-align: center;
+               margin: 0 auto;
+               padding-bottom: 20px;
+            }
+         }
+      }
+
+      &-contact {
+         &-content {
+            padding: 0 15px;
+         }
+
+         .map {
+            clip-path: none;
+            width: auto;
+            flex-grow: 1;
+         }
+
+         .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 18px;
+            padding: 0;
+            margin-left: 20px;
+            width: auto;
+
+            &-address {
+               margin: 0 0 20px;
+            }
+         }
+      }      
    }
 
    .more {
@@ -356,22 +549,17 @@
 
 
    .form {
-      width: 100%;
-      max-width: none;
-         .input-div, .button {
-            width: 100%;
-            margin: 0 0 10px;
-         }
+      margin-left: -15px;
+      margin-right: -15px;
+
    }
 
-    .button {
-        width: 100%;
-        min-width: auto;
-
-        &.button-large {
-            font-size: 16px;
-        }
-    }
+   .form2 {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: -15px !important;
+      margin-right: -15px !important;
+   }
 
 	.col-xxs-12 {
 		width: 100%;
@@ -379,15 +567,15 @@
 
 	.col-xxs-offset-0 {
 		margin-left: 0;
-    }
+   }
     
-    .visible-xxs {
-        display: block !important;
-    }
+   .visible-xxs {
+      display: block !important;
+   }
 
 	.hidden-xxs {
 		display: none !important;
-    }
+   }
 
     .header {
        .button {
@@ -397,8 +585,24 @@
 
    .section {
       &-title {
-         font-size: 25px;
-         margin-bottom: 20px;
+      }
+
+      &-main {
+         &-title {
+            font-size: 24px;
+            line-height: 1;
+         }
+      }
+
+      &-delo {
+         .delo {
+         }
+
+         .carousel-delo {
+            max-width: none;
+            margin: 0 -15px;
+            width: auto;
+         }
       }
 
       &-services {
@@ -429,14 +633,17 @@
 
       &-quarantees {
          .quarantee {
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 20px;
+
             &-title {
                font-size: 20px;
                margin-bottom: 10px;
+               text-align: center;
             }
             &-img {
-               width: 40px;
-               margin-right: 10px;
+               margin: 0;
             }
          }
       }
@@ -448,6 +655,17 @@
             }
          }
       }
+
+      &-contact {
+         &-content {
+            display: block;
+            // flex-direction: column;
+         }
+
+         .contact {
+            margin: 20px 0 0 0;
+         }
+      }  
    }
 
    .modal {

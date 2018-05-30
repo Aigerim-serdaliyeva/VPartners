@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .input, .textarea {
     background: transparent;
-    color: #000;
+    color: #fff;
     font-size: 14px;
     line-height: inherit;
     border: 1px solid #fff;
@@ -229,7 +229,6 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .input-div {
-      // width: 195px;
       margin-right: 20px;
    }
 
@@ -271,7 +270,8 @@ h1, h2, h3, h4, h5, h6 {
 
       .input {
          border: 1px solid $accent;
-      
+         color: #000;
+         
          &::-webkit-input-placeholder {
             color: #000;
          }
@@ -352,8 +352,6 @@ h1, h2, h3, h4, h5, h6 {
          -o-clip-path: polygon(0 0, 0% 100%, 100% 100%);
          clip-path: polygon(0 0, 0% 100%, 100% 100%);  
       }  
-   }
-
-   
+   }   
 }
 

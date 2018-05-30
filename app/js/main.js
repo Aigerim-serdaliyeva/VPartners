@@ -146,16 +146,14 @@ $(document).ready(function() {
 
 
     $(".carousel-delo").owlCarousel({
-      nav: true,
-      dots: false,
       loop: true,
       smartSpeed: 500,
       margin: 0,
       navText: ['', ''],
       responsive: {
          0: { items: 1, mouseDrag: false },
-         480: { items: 1, mouseDrag: true },
-         768: { items: 2 }, 
+         480: { items: 1, nav: false, dots: true },
+         768: { items: 2, nav: true, dots: false, mouseDrag: true }, 
       },
    });
 
