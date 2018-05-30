@@ -224,6 +224,18 @@
     
 
    .section {
+      &-main2 {
+         &-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+         }
+         &-list {
+            li {
+               font-size: 16px;
+            }
+         }
+      }
+
       &-delo {
          .delo {
             padding-top: 30px;
@@ -332,6 +344,18 @@
       }
    }
 
+   .delo {
+      &-title {
+         justify-content: space-between;
+         &-text {
+            width: 65%;
+         }
+      }
+      &-nomer {
+         width: 30%;
+      }
+   }
+
    #thanks-page {
       .page-wrapper {
          background: transparent;
@@ -410,6 +434,19 @@
          }
       }
 
+      &-main2 {
+         padding-top: 120px;
+         &-list {
+            flex-direction: column;
+            margin-bottom: 20px;
+            li {
+               font-size: 20px;
+               margin-bottom: 15px;
+               max-width: none;
+            }
+         }
+      }
+
       &-delo {
          .delo {
             &-block {
@@ -484,24 +521,11 @@
    }
 
    .more {
-     &-img {
-       margin-right: 30px;
-     }
-     .form {       
-        form {
-          margin: 0 auto;
-          max-width: 500px;
-          flex-direction: column;
+     .delo {
+        &-title {
         }
-
-        &-info {
-          margin: 0 auto;
-          max-width: 500px;          
-        }
-
-        .input-div, .button {
-          max-width: none;
-          width: 100%;
+        &-nomer {
+           font-size: 32px;
         }
      }
    }
@@ -529,21 +553,70 @@
               margin: 0 auto 10px;
            }
            &-block {
-              margin: 0 auto;
+              margin: 0 auto 0 0;
            }
         }
      }
 
-    
   }
+
+   .more {
+      .delo {
+         &-title {
+            justify-content: space-between;
+            &-text {
+               font-size: 20px;
+            }
+         }
+         &-nomer {
+            font-size: 28px;
+            margin-right: 0;
+         }
+
+         &-block {
+            &-title {
+               font-size: 16px;
+               margin-bottom: 15px;
+            }
+            &-text {
+               margin-bottom: 10px;
+            }
+         }
+      }
+   }
+
+   .sfer-more {
+      .sfera {
+         &-title {
+            padding: 20px;
+            text-align: center;
+         }
+         &-content {
+            flex-direction: column;
+            padding: 20px;
+         }
+         &-label {
+            margin: 0 auto;
+         }
+         .form--sfera {
+            margin: 0 auto;
+         }
+      }
+   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
 
   .remodal {
+     .modal-title {
+        font-size: 18px;
+     }
+     form {
+        width: auto;
+     }
     &.remodal-small {
-      padding: 25px 15px;
+      padding: 20px 10px;
     }
   }
 
@@ -591,6 +664,18 @@
          &-title {
             font-size: 24px;
             line-height: 1;
+         }
+      }
+
+      &-main2 {
+         &-title {
+            font-size: 28px;
+         }
+         &-list {
+            padding: 0;
+            li {
+               font-size: 18px;
+            }
          }
       }
 
@@ -686,20 +771,45 @@
        text-align: left;
      }
 
-     &[data-remodal-id="zadat-vopros"] {  
-       background-size: cover;
-       background-position: center 50px;
-      .input-div {
-        &:last-child {
-          margin-bottom: 10px;
-        }
-      }
+   //   &[data-remodal-id="zadat-vopros"] {  
+   //    //  background-size: cover;
+   //    //  background-position: center 50px;
+   //    .input-div {
+   //      &:last-child {
+   //        margin-bottom: 10px;
+   //      }
+   //    }
 
-      .textarea {
-        height: 125px;
-        margin-bottom: 10px;
+   //    .textarea {
+   //      height: 125px;
+   //      margin-bottom: 10px;
+   //    }
+   //  }
+   }
+
+   .more {
+      .delo {
+         &-title {
+            flex-direction: column;
+            margin: 20px 10px 15px;
+            &-text {
+               width: 100%;
+               text-align: center;
+            }
+         }
+         &-nomer {
+            width: 100%;
+            text-align: center;
+         }
+         &-block {
+            &-title {
+               margin: 0 10px 10px !important;
+            }
+            &-text {
+               margin: 0 10px 10px;
+            }
+         }
       }
-    }
    }
 
 }

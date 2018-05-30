@@ -269,6 +269,7 @@ body {
             padding-left: 45px;
             position: relative;
             margin-bottom: 25px;
+            max-width: 255px;
 
             &::before {
                content: "";
@@ -432,7 +433,7 @@ body {
       .s {
         &-table {
           display: flex;
-
+         margin-bottom: 30px;
         }
 
         &-side {
@@ -833,7 +834,8 @@ body {
          &-title {
             font-size: 20px;
             font-weight: 600;
-            border-bottom: 1px solid #000;
+            // border-bottom: 1px solid #000;
+            text-decoration: underline;
             display: inline-block;
             margin: 0 35px 25px;
          }
