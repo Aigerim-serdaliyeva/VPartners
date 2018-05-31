@@ -247,6 +247,9 @@ h1, h2, h3, h4, h5, h6 {
       .timer-element > span:last-child {
          color: #000 !important;
       }
+      &-timer-2 {
+         display: none;
+      }
    }
 
    &:after {
@@ -340,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .clock {
-      margin-left: -55px;
+      margin-left: -140px;
    }
 
    &--left {

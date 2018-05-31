@@ -8,8 +8,7 @@ $(document).ready(function() {
     var utms = parseGET();
     var headerHeight = 99;
     var $hamburger = $(".hamburger");
-    var sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]').remodal();
-    var $sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]');
+    
 
     if(utms && Object.keys(utms).length > 0) {
         window.sessionStorage.setItem('utms', JSON.stringify(utms));
@@ -19,6 +18,13 @@ $(document).ready(function() {
 
     if($wnd.width() < 992) {
         headerHeight = 89;
+    }
+    if($wnd.width() > 479) {
+      $("input[type=tel]").mask("+7 (999) 999 99 99", {
+         completed: function() {
+             $(this).removeClass('error');
+         }
+     }); 
     }
 
     $wnd.scroll(function() { onscroll(); });
@@ -73,13 +79,7 @@ $(document).ready(function() {
     $top.click(function() {
         $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
     });
-
-
-    $("input[type=tel]").mask("+7 (999) 999 99 99", {
-        completed: function() {
-            $(this).removeClass('error');
-        }
-    }); 
+    
 
     $("input:required, textarea:required").keyup(function() {
         var $this = $(this);
@@ -171,8 +171,9 @@ $(document).ready(function() {
    });
 
 
-   $(".s-dropdown select").change(function() {
+   $(".s-select select").change(function() {
       var val = $(this).val();
+      console.log('val:', val);
       $(".s-col[data-col]").removeClass("active").filter("[data-col=" + val + "]").addClass("active");
    });
 

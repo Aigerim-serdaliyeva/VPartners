@@ -39,6 +39,21 @@
             clip-path: polygon(0 0, 0% 100%, 100% 100%);  
          }
       }
+
+      .clock {
+         margin-left: -90px;
+      }
+   }
+
+   .clock {
+      margin-left: 0;
+      &-timer {
+         display: none;
+      }
+      &-timer-2 {
+         display: block;
+      }
+      
    }
 
    .header {
@@ -58,7 +73,10 @@
    }
 
    .main-menu {
-      margin-top: 0;
+      margin-top: 10px;
+      li {
+         margin-right: 10px;
+      }
    }
 
    .section {    
@@ -123,6 +141,10 @@
 
 @media only screen and (max-width : 991px) {	
 
+   .main-menu {
+      margin-top: 0;
+   }
+
     .form {
       max-width: 600px;      
 
@@ -142,6 +164,12 @@
 
       .clock {
          justify-content: space-between;
+         &-timer {
+            display: none;
+         }
+         &-timer-2 {
+            display: block;
+         }
       }
 
       .input-div, .button {
@@ -361,21 +389,24 @@
          background: transparent;
       }
 
-      .header {
-         background: $accent;
-      }
-
       .section-thanks {
          padding: 130px 0 30px;
-         display: flex;
-         align-items: center;
+         &-content {
+            margin-left: 0;
+         }
 
-         &-img {
-            display: none;
+         &-title {
+            margin-bottom: 20px;
          }
 
          &-text {
             margin-bottom: 20px;
+            font-size: 26px;
+         }
+
+         &-link {
+            font-size: 16px;
+            margin-bottom: 70px;
          }
       }
    }
@@ -615,6 +646,10 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
 
+   .call-me {
+      display: block;
+   }
+
   .remodal {
      .modal-title {
         font-size: 18px;
@@ -779,20 +814,6 @@
        text-align: left;
      }
 
-   //   &[data-remodal-id="zadat-vopros"] {  
-   //    //  background-size: cover;
-   //    //  background-position: center 50px;
-   //    .input-div {
-   //      &:last-child {
-   //        margin-bottom: 10px;
-   //      }
-   //    }
-
-   //    .textarea {
-   //      height: 125px;
-   //      margin-bottom: 10px;
-   //    }
-   //  }
    }
 
    .more {
