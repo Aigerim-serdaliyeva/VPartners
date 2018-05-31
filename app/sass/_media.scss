@@ -472,10 +472,11 @@
          }
          .danil {
             &-content {
-               display: block;
+               flex-direction: column;
             }
-            img {
-               display: none;
+            &-img {
+               margin: 0 auto;
+               padding-top: 10px;
             }
             &-block {
                max-width: none;
@@ -490,6 +491,12 @@
                margin: 0 auto;
                padding-bottom: 20px;
             }
+         }
+         .certificates {
+            display: none;
+         }
+         .carousel-certificates {
+            display: block;
          }
       }
 
@@ -611,6 +618,7 @@
   .remodal {
      .modal-title {
         font-size: 18px;
+        margin-bottom: 15px;
      }
      form {
         width: auto;

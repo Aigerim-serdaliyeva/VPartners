@@ -157,6 +157,20 @@ $(document).ready(function() {
       },
    });
 
+   $(".carousel-certificates").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+      },
+   });
+
+
    $(".s-dropdown select").change(function() {
       var val = $(this).val();
       $(".s-col[data-col]").removeClass("active").filter("[data-col=" + val + "]").addClass("active");
