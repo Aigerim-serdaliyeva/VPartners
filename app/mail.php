@@ -2,9 +2,9 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "SCK (лэндинг)";
-$admin_email  = "opt@sck-1.kz, client@marketing-time.kz";
-$server_mail = "<opt@sck-1.kz>";
+$project_name = "VPartners";
+$admin_email  = "info@vpartners.kz, client@marketing-time.kz";
+$server_mail = "<info@vpartners.kz>";
 $form_subject = "Заявка";
 
 
