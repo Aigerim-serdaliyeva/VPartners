@@ -173,11 +173,8 @@ $(document).ready(function() {
 
    $(".s-select select").change(function() {
       var val = $(this).val();
-      console.log('val:', val);
-      $(".s-col[data-col]").removeClass("active").filter("[data-col=" + val + "]").addClass("active");
+      $("[data-col]").removeClass("active").filter("[data-col=" + val + "]").addClass("active");
    });
-
-   
 
 });
 
