@@ -688,6 +688,15 @@ body {
     }
 }
 
+
+#ur-lisa {
+   .header {
+      &-title {
+         margin-left: -18px;
+      }
+   }
+}
+
 #thanks-page {   
 
    .page-wrapper {
