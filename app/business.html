@@ -587,15 +587,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <input type="text" class="input" name="name" placeholder="Представьтесь">
          </div>
          <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Название компании*">
+            <input type="text" class="input" name="name" placeholder="Название компании*" required>
+            <span class="error-message">Заполните это поле</span>
          </div>
          <div class="input-div">
             <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
             <span class="error-message">Заполните это поле</span>
          </div>
          <div class="input-div">
-            <input type="tel" class="input" name="email" placeholder="E-mail" required>
-            <span class="error-message">Заполните это поле</span>
+            <input type="tel" class="input" name="email" placeholder="E-mail" >
          </div>
 
          <button class="button button-white ajax-submit" type="submit" id="uznat_senu">Узнать цену</button>
