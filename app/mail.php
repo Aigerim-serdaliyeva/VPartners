@@ -6,6 +6,7 @@ $project_name = "VPartners";
 $admin_email  = "info@vpartners.kz, client@marketing-time.kz";
 $server_mail = "<info@vpartners.kz>";
 $form_subject = "Заявка";
+$site = isset($_POST["site"]) ? "?site=" . $_POST["site"] : "";
 
 
 //Script Foreach
@@ -37,4 +38,4 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 
 mail($admin_email, adopt($form_subject), $message, $headers);
 
-header("Location: /thanks.html");
+header("Location: /thanks.php" . $site);

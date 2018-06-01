@@ -201,7 +201,7 @@ body {
     }
 
     li {
-        margin-right: 30px;
+        margin-right: 28px;
     }
 
    a {
@@ -214,6 +214,9 @@ body {
       &.link:hover, &.active {
          border-bottom: 2px solid $accent;
       }
+   }
+   .link-blue {
+      color: $accent;
    }
 }
 
@@ -749,6 +752,25 @@ body {
           
           &-address {
              margin: 0 0 60px -80px;
+          }
+          &-phone {
+             margin-bottom: 20px;
+          }
+       }
+
+       .instagram {
+          position: relative;
+          padding-left: 28px;
+          &::before {
+             position: absolute;
+             content: "";
+             background-image: url('../img/instagram.png');
+             width: 24px;
+             height: 24px;
+             top: 50%;
+             transform: translateY(-50%);
+             left: 0;
+            
           }
        }
     }

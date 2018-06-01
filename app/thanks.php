@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      <li><a class="link" href="/#praktika">Успешная практика</a></li>
                      <li><a class="link" href="/#why">Выгоды для клиентов</a></li>
                      <li><a class="link" href="/#sfera">Услуги</a></li>
-                     <li><a class="link" href="/#osnovatel">Ведущий юрист</a></li>							
+                     <li><a class="link" href="/#osnovatel">Основатель конторы</a></li>							
                      <li><a class="link" href="/#contact">Контакты</a></li>							
                      <li class="visible-xs visible-sm"><a href="tel:+77273170164" class="text-phone">+ 7 (727) 317- 01-64</a></li>
                      <li class="visible-xs visible-sm"><a href="tel:+77789972630" class="text-phone">+ 7 (778) 997-26-30</a></li>
@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                <div class="section-thanks-block inverse">
                   <div class="section-thanks-title">Спасибо!</div>
                   <div class="section-thanks-text">Ваша заявка успешно принята. В ближайшее время наш юрист свяжется с Вами</div>
-                  <a href="/" class="section-thanks-link" id="thanks_button">Вернуться на главную</a>
+                  <a href="/<?php echo $_GET['site'] ?>" class="section-thanks-link" id="thanks_button">Вернуться на главную</a>
                </div>
 				</div>
 			</div>
