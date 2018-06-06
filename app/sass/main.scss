@@ -121,6 +121,7 @@ body {
 .header {
    position: fixed;
    top: 0;
+   font-size: 15.5px;
    width: 100%;
    z-index: 98;
    padding: 10px 0;
@@ -144,7 +145,7 @@ body {
    &-title {
       margin-top: 7px;
       font-weight: normal;
-      font-size: 14px;
+      font-size: 15.5px;
       &-business {
          margin-left: -18px;
          margin-top: 7px;
@@ -201,13 +202,13 @@ body {
     ul {
         list-style: none;
         display: flex;
-        margin: -27px auto 0 189px;
+        margin: -30px auto 0 170px;
         padding: 0;
         max-width: 780px;
     }
 
     li {
-        margin-right: 28px;
+        margin-right: 18px;
     }
 
    a {
