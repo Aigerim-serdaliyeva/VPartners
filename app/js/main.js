@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
 
     if($wnd.width() < 992) {
-        headerHeight = 89;
+        headerHeight = 99;
     }
     if($wnd.width() > 479) {
       $("input[type=tel]").mask("+7 (999) 999 99 99", {
