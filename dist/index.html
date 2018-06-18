@@ -71,15 +71,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <nav class="main-menu">
                <div class="container">
                   <ul>
-                     <li><a class="link" href="#quarantee">Гарантии</a></li>
-                     <li><a class="link" href="#praktika">Успешная практика</a></li>
-                     <li><a class="link" href="#why">Выгоды для клиентов</a></li>
-                     <li><a class="link" href="#sfera">Услуги</a></li>
-                     <li><a class="link" href="#osnovatel">Основатель конторы</a></li>							
-                     <li><a class="link" href="#contact">Контакты</a></li>			                  				
-                     <li><a class="link link-blue" href="./business.html">Сопровождение бизнеса</a></li>                     				
-                     <li class="visible-xs visible-sm"><a href="tel:+77273170164" class="text-phone">+ 7 (727) 317- 01-64</a></li>
-                     <li class="visible-xs visible-sm"><a href="tel:+77789972630" class="text-phone">+ 7 (778) 997-26-30</a></li>
+                    <li><a class="link" href="#sfera">Услуги</a></li>
+                    <li><a class="link" href="#quarantee">Гарантии</a></li>
+                    <li><a class="link" href="#praktika">Успешная практика</a></li>
+                    <li><a class="link" href="#why">Выгоды для клиентов</a></li>
+                    <li><a class="link" href="#osnovatel">Основатель конторы</a></li>							
+                    <li><a class="link" href="#contact">Контакты</a></li>			                  				
+                    <li><a class="link link-blue" href="./business.html">Сопровождение бизнеса</a></li>                     				
+                    <li class="visible-xs visible-sm"><a href="tel:+77273170164" class="text-phone">+ 7 (727) 317- 01-64</a></li>
+                    <li class="visible-xs visible-sm"><a href="tel:+77789972630" class="text-phone">+ 7 (778) 997-26-30</a></li>
                   </ul>
                </div>
             </nav>  
@@ -138,16 +138,82 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                
             </div>
          </div>
-      </section>  
+      </section> 
 
-      <section class="section section-video">
+      <section class="section section-sfera" id="sfera">
          <div class="container">
-            <div class="section-title">Приветствие от основателя юридической конторы Данила Василенко</div>
-            <div class="section-video-content">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/WSyLyklFDc0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="section-title">
+               В каких сферах мы можем Вам помочь?
             </div>
+            <div class="section-sfera-content">
+               <div class="sfera-block-1">
+                  <div class="sfera">
+                     <div class="sfera-title">Семейное право</div>
+                     <button class="button" data-remodal-target="sfer-more-1">Посмотреть подробнее</button>
+                  </div>
+                  <div class="sfera">
+                     <div class="sfera-title">Трудовые споры</div>
+                     <button class="button" data-remodal-target="sfer-more-2">Посмотреть подробнее</button>
+                  </div>
+                  <div class="sfera">
+                     <div class="sfera-title">Недвижимость</div>
+                     <button class="button" data-remodal-target="sfer-more-3">Посмотреть подробнее</button>
+                  </div>
+                  <div class="sfera">
+                     <div class="sfera-title">Споры с банками</div>
+                     <button class="button" data-remodal-target="sfer-more-4">Посмотреть подробнее</button>
+                  </div>
+               </div>
+               <div class="sfera-block-1">
+                  <div class="sfera">
+                     <div class="sfera-title">Наследство</div>
+                     <button class="button" data-remodal-target="sfer-more-5">Посмотреть подробнее</button>
+                  </div>
+                  <div class="sfera">
+                     <div class="sfera-title">Судебная защита</div>
+                     <button class="button" data-remodal-target="sfer-more-6">Посмотреть подробнее</button>
+                  </div>
+                  <div class="sfera">
+                     <div class="sfera-title">Другая юридическая 
+                        поддержка</div>
+                     <button class="button" data-remodal-target="sfer-more-7">Посмотреть подробнее</button>
+                  </div>
+               </div>
+            </div>
+            <div class="form inverse">
+               <div class="form-content">
+                  <div class="form-title">Запишитесь на консультацию юриста прямо сейчас и получите скидку 50%</div>
+
+                  <form action="/mail.php" method="post">
+                     <input type="hidden" name="info" value="Запишитесь на консультацию юриста прямо сейчас и получите скидку 50%">
+                     <div class="input-div">
+                        <input type="text" class="input" name="name" placeholder="Представьтесь">
+                     </div>
+                     <div class="input-div">
+                        <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
+                        <span class="error-message">Заполните это поле</span>
+                     </div>
+   
+                     <button class="button button-white ajax-submit" type="submit" id="polu4it_prais_list">Записаться на консультацию с 50% скидкой</button>
+                  </form>
+   
+                  <div class="form-info">*Гарантия конфиденциальности вводимых данных</div>
+      
+               </div>
+               
+               <div class="clock">
+                  <div class="clock-text">Предложение истекает через</div>	                      
+                  <div class="clock-timer">
+                     <script src="http://megatimer.ru/s/173bbc70355c1336c7693e3a9f080f6b.js"></script>
+                 </div>
+
+                 <div class="clock-timer-2">
+                     <script src="http://megatimer.ru/s/80a390dc11ef75beafe49f85ea431900.js"></script>
+                  </div>
+              </div>
+            </div> 
          </div>
-      </section>
+      </section>      
       
       <section class="section section-quarantees" id="quarantee">
          <div class="container">
@@ -349,78 +415,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          </div>
       </section>
 
-      <section class="section section-sfera" id="sfera">
+      <section class="section section-video">
          <div class="container">
-            <div class="section-title">
-               В каких сферах мы можем Вам помочь?
+            <div class="section-title">Приветствие от основателя юридической конторы Данила Василенко</div>
+            <div class="section-video-content">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/WSyLyklFDc0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <div class="section-sfera-content">
-               <div class="sfera-block-1">
-                  <div class="sfera">
-                     <div class="sfera-title">Семейное право</div>
-                     <button class="button" data-remodal-target="sfer-more-1">Посмотреть подробнее</button>
-                  </div>
-                  <div class="sfera">
-                     <div class="sfera-title">Трудовые споры</div>
-                     <button class="button" data-remodal-target="sfer-more-2">Посмотреть подробнее</button>
-                  </div>
-                  <div class="sfera">
-                     <div class="sfera-title">Недвижимость</div>
-                     <button class="button" data-remodal-target="sfer-more-3">Посмотреть подробнее</button>
-                  </div>
-                  <div class="sfera">
-                     <div class="sfera-title">Споры с банками</div>
-                     <button class="button" data-remodal-target="sfer-more-4">Посмотреть подробнее</button>
-                  </div>
-               </div>
-               <div class="sfera-block-1">
-                  <div class="sfera">
-                     <div class="sfera-title">Наследство</div>
-                     <button class="button" data-remodal-target="sfer-more-5">Посмотреть подробнее</button>
-                  </div>
-                  <div class="sfera">
-                     <div class="sfera-title">Судебная защита</div>
-                     <button class="button" data-remodal-target="sfer-more-6">Посмотреть подробнее</button>
-                  </div>
-                  <div class="sfera">
-                     <div class="sfera-title">Другая юридическая 
-                        поддержка</div>
-                     <button class="button" data-remodal-target="sfer-more-7">Посмотреть подробнее</button>
-                  </div>
-               </div>
-            </div>
-            <div class="form inverse">
-               <div class="form-content">
-                  <div class="form-title">Запишитесь на консультацию юриста прямо сейчас и получите скидку 50%</div>
-
-                  <form action="/mail.php" method="post">
-                     <input type="hidden" name="info" value="Запишитесь на консультацию юриста прямо сейчас и получите скидку 50%">
-                     <div class="input-div">
-                        <input type="text" class="input" name="name" placeholder="Представьтесь">
-                     </div>
-                     <div class="input-div">
-                        <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
-                        <span class="error-message">Заполните это поле</span>
-                     </div>
-   
-                     <button class="button button-white ajax-submit" type="submit" id="polu4it_prais_list">Записаться на консультацию с 50% скидкой</button>
-                  </form>
-   
-                  <div class="form-info">*Гарантия конфиденциальности вводимых данных</div>
-      
-               </div>
-               
-               <div class="clock">
-                  <div class="clock-text">Предложение истекает через</div>	                      
-                  <div class="clock-timer">
-                     <script src="http://megatimer.ru/s/173bbc70355c1336c7693e3a9f080f6b.js"></script>
-                 </div>
-
-                 <div class="clock-timer-2">
-                     <script src="http://megatimer.ru/s/80a390dc11ef75beafe49f85ea431900.js"></script>
-                  </div>
-              </div>
-            </div> 
          </div>
       </section>
 
